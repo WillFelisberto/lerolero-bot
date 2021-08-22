@@ -1,0 +1,21 @@
+{
+	"name": "puppeteer-robot",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/WillFelisberto/puppeteer-robot.git",
+	"author": "Willian Souza <willian_aru_@hotmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"dependencies": {
+		"axios": "^0.21.1",
+		"dotenv": "^8.2.0",
+		"puppeteer": "^10.2.0",
+		"twit": "^2.2.11"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.7"
+	}
+}
