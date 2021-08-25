@@ -6,9 +6,9 @@ const PORT = process.env.PORT || 5000;
 // import { parse } from 'node-html-parser';
 const getRandomQuote = require('./getRandomQuote');
 
-// setInterval(async () => {
-getRandomQuote();
-// }, 1000 * 60 * 60 * 2);
+setInterval(async () => {
+	await getRandomQuote();
+}, 1000 * 60 * 60 * 2);
 
 express()
 	.use(express.static(path.join(__dirname, 'public')))
