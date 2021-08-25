@@ -8,8 +8,7 @@ const getRandomQuote = require('./getRandomQuote');
 
 setInterval(async () => {
 	await getRandomQuote();
-	//}, 1000 * 60 * 60 * 2);
-}, 1000);
+}, 1000 * 60 * 60 * 2);
 
 express()
 	.use(express.static(path.join(__dirname, 'public')))

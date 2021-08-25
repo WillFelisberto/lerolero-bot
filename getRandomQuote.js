@@ -9,19 +9,19 @@ const getRandomQuote = async () => {
 		() =>
 			document.getElementsByClassName('sentence sentence-exited')[0].innerHTML
 	);
+	await browser.close();
 
 	console.log(lerolero);
 
-	// Bot.post(
-	// 	'statuses/update',
-	// 	{
-	// 		status: lerolero,
-	// 	},
-	// 	function (err, _data, _response) {
-	// 		console.log(err);
-	// 	}
-	// );
-	await browser.close();
+	Bot.post(
+		'statuses/update',
+		{
+			status: lerolero,
+		},
+		function (err, _data, _response) {
+			console.log(err);
+		}
+	);
 };
 
 module.exports = getRandomQuote;
