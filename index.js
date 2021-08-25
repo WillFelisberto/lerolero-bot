@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 const getRandomQuote = require('./getRandomQuote');
 
 // setInterval(async () => {
-await getRandomQuote();
+getRandomQuote();
 // }, 1000 * 60 * 60 * 2);
 
 express()
