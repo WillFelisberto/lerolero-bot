@@ -22,6 +22,6 @@ const getRandomQuote = async () => {
 	await browser.close();
 };
 
-setInterval(() => {
-	getRandomQuote();
+setInterval(async () => {
+	await getRandomQuote();
 }, 1000 * 60 * 60 * 2);
